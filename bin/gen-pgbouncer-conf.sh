@@ -13,7 +13,7 @@ fi
 
 cat >> /app/vendor/pgbouncer/pgbouncer.ini << EOFEOF
 [pgbouncer]
-listen_addr = *
+listen_addr = pgbouncer-internal.herokuapp.com
 listen_port = 6000
 auth_type = md5
 auth_file = /app/vendor/pgbouncer/users.txt
